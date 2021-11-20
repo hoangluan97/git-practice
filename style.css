@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto" sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+button {
+  height: 70px;
+  width: 130px;
+  border-radius: 4px;
+  background-color: blueviolet;
+  letter-spacing: 1px;
+  font-size: 14px;
+  box-shadow: 0 1px 2px black;
+  position: relative;
+  overflow: hidden;
+}
+button:focus {
+  outline: none;
+}
+.spanC {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) scale(0);
+  animation: click 0.4s ease;
+}
+@keyframes click {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
