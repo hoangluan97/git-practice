@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  flex-wrap: wrap;
+  background-color: rgb(8, 162, 252);
+}
+.empty {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: solid 4px black;
+  background-color: white;
+}
+.drag {
+  background-image: url("./img/a.jpg");
+  height: 195px;
+  width: 195px;
+  object-fit: cover;
+  background-position: center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.hold {
+  border: solid 5px rgb(240, 164, 51);
+}
+.hover {
+  border: dotted 4px black;
+  background-color: blueviolet;
+}
+.blind {
+  background-color: white;
+}
