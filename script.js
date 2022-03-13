@@ -7,8 +7,8 @@ const clear = document.getElementById("clear");
 const inputColor = document.getElementById("color");
 
 let size = 20;
-// let x;
-// let y;
+let x;
+let y;
 let color = "black";
 let isPressed = false;
 
